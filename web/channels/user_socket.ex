@@ -2,7 +2,7 @@ defmodule PythonChannels.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", PythonChannels.RoomChannel
+  channel "rooms:*", PythonChannels.RoomChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
